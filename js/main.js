@@ -1,5 +1,5 @@
 let canvasKita = document.getElementById("myCanvas");
-canvasKita.width = 1310;
+canvasKita.width = 1349;
 canvasKita.height = 350;
 let ctx = canvasKita.getContext("2d");
 let imageData = ctx.getImageData(0, 0, canvasKita.width, canvasKita.height);
@@ -13,7 +13,7 @@ function animasi(){
     ctx.clearRect(0,0,canvasKita.width, canvasKita.height);
   
     ctx.beginPath();
-    ctx.fillStyle = "#6777ef";
+    ctx.fillStyle = "#0d6aad";
 
     ctx.fillRect(0, 0, 1350, 400);
     ctx.closePath();
