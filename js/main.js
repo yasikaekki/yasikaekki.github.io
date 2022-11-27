@@ -1,5 +1,5 @@
 let canvasKita = document.getElementById("myCanvas");
-canvasKita.width = 1349;
+canvasKita.width = 1309;
 canvasKita.height = 350;
 let ctx = canvasKita.getContext("2d");
 let imageData = ctx.getImageData(0, 0, canvasKita.width, canvasKita.height);
