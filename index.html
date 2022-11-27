@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-          <svg class="waveblack" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#191d21" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,288,245.3C384,245,480,235,576,224C672,213,768,203,864,186.7C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+          <!-- <svg class="waveblack" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#191d21" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,288,245.3C384,245,480,235,576,224C672,213,768,203,864,186.7C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
           <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,288,245.3C384,245,480,235,576,224C672,213,768,203,864,186.7C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
       </section>
 
@@ -443,7 +443,7 @@
     <!-- Portfolio -->
     <section id="portfolio">
         <div class="container">
-          <h2 class="text-center mb-3"><span class="text-shadow-blue">Portfolio</span></h2>
+          <h2 class="text-center mb-3" data-aos="fide-up" data-aos-duration="1000"><span class="text-shadow-blue">Portfolio</span></h2>
           <div class="row">
             <div class="col-md-4 box" data-aos="zoom-in" data-aos-duration="1000">
               <div class="card">
@@ -546,8 +546,8 @@
               </a>
             </div>
             <div class="col-md-4 mt-3" >
-              <h3>Informasi</h3>
-              <ul class="list-unlistyled list-inline">
+              <h3 style="margin-left: 5rem;">Informasi</h3>
+              <ul class="list-unlistyled list-inline" style="margin-left: 5rem;">
                 <li><a href="#">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#what">Apa yang saya tawarkan?</a></li>
@@ -603,8 +603,6 @@
           $("#what").toggleClass("dark");
           $("h2").toggleClass("dark");
           $(".card").toggleClass("dark");
-          $(".wave").hide();
-          $(".waveblack").show();
         });
       });
     </script>
