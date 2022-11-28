@@ -170,7 +170,7 @@ body.dark {
 }
 
 #what.dark {
-  background-color: #728394!important;
+  background-color: rgba(255, 255, 255, 0.15);
   color: white!important;
 }
 
@@ -182,11 +182,16 @@ body.dark {
 }
 
 .text-shadow-blue {
+  color: #191d21;
+  background-image: linear-gradient(to top, #334B94 40%, transparent 0px);
+}
+.text-shadow-blue.dark {
+  color: white;
   background-image: linear-gradient(to top, #334B94 40%, transparent 0px);
 }
 
 h2::after {
-  background-color: #4d4d4d;
+  background-color: #191d21;
   content: "";
   display: inline-block;
   height: 2px;
@@ -196,7 +201,7 @@ h2::after {
   left: 0.7em;
 }
 h2::before {
-  background-color: #4d4d4d;
+  background-color: #191d21;
   content: "";
   display: inline-block;
   height: 2px;
@@ -383,7 +388,6 @@ h2.dark::before {
   position: fixed;
   background-color: #6777ef;
   display: inline;
-  color: #fff;
   width: 44px;
   height: 44px;
   text-align: center;
@@ -398,14 +402,23 @@ h2.dark::before {
   margin-top: 10px;
 }
 
+.btn-floating-up a {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.btn-floating-up.dark a {
+  margin-top: 10px;
+  color: #191d21;
+}
+
 .btn-floating-up a:hover {
   background-color: #6777ef;
   color: #fff;
 }
-
-.btn-floating-down a:hover {
+.btn-floating-up.dark a:hover {
   background-color: #6777ef;
-  color: #fff;
+  color: #191d21;
 }
 
 /*  About */
@@ -413,10 +426,17 @@ h2.dark::before {
   padding: 80px 0;
 }
 
-#about .resume-item {
+.resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(25, 29, 33, 0.5);
+  position: relative;
+}
+
+.resume-item.dark {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
   position: relative;
 }
 
@@ -428,9 +448,18 @@ h2.dark::before {
   margin-bottom: 10px;
 }
 
-#about .resume-item span {
+.resume-item span {
   font-size: 16px;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(222, 226, 233, 0.5);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume-item.dark span {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -473,6 +502,10 @@ h2.dark::before {
 #what i {
   font-size: 5rem;
   color: #334B94;
+}
+#what.dark i {
+  font-size: 5rem;
+  color: white;
 }
 
 #what h4 {
@@ -568,6 +601,11 @@ h2.dark::before {
   padding: 20px 0;
   color: #fff;
 }
+#footer.dark {
+  background-color: #334B94;
+  padding: 20px 0;
+  color: #191d21;
+}
 
 #footer ul li {
     margin-top: 10px;
@@ -576,4 +614,8 @@ h2.dark::before {
 #footer a {
     text-decoration: none;
     color: #fff;
+}
+#footer.dark a {
+    text-decoration: none;
+    color: #191d21;
 }
