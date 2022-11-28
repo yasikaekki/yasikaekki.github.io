@@ -240,6 +240,17 @@ h2.dark::before {
   z-index: 1001;
 }
 
+.navbar-bg {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #334B94;
+  z-index: -1;
+}
+
 #nav .radio-btn {
   width: 50px;
   height: 25px;
@@ -286,26 +297,26 @@ h2.dark::before {
   transform: scale(1);
 }
 
-.nav-brand.dark {
+#nav .navbar-brand.dark span {
   font-weight: bolder;
   color: #191d21;
 }
 
-.nav-brand {
+#nav .navbar-brand span {
   font-weight: bolder;
   color: #fff;
 }
 
-#nav .navbar-nav ul li {
+#nav .navbar-nav .nav-item ul li {
   padding: 0 10px;
 }
 
-.navlink {
+#nav .navbar-nav li a{
   color: #fff;
   font-weight: bold;
 }
 
-.navlink.dark {
+#nav .navbar-nav.dark li a{
   color: #191d21;
   font-weight: bold;
 }
@@ -426,14 +437,14 @@ h2.dark::before {
   padding: 80px 0;
 }
 
-.resume-item {
+#about .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid rgba(25, 29, 33, 0.5);
   position: relative;
 }
 
-.resume-item.dark {
+#about .resume-item.dark {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid rgba(255, 255, 255, 0.15);
@@ -448,7 +459,7 @@ h2.dark::before {
   margin-bottom: 10px;
 }
 
-.resume-item span {
+#about .resume-item span {
   font-size: 16px;
   background: rgba(222, 226, 233, 0.5);
   padding: 5px 15px;
@@ -457,7 +468,7 @@ h2.dark::before {
   margin-bottom: 10px;
 }
 
-.resume-item.dark span {
+#about .resume-item.dark span {
   font-size: 16px;
   background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
@@ -546,7 +557,7 @@ h2.dark::before {
   padding: 50px 0 50px 0;
 }
 
-#portfolio .box .card {
+#portfolio .card {
   display: grid;
   border-radius: 5px;
   margin-top: 20px;
@@ -554,7 +565,7 @@ h2.dark::before {
   box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
 }
 
-.card.dark {
+#portfolio .card.dark {
   display: grid;
   border-radius: 5px;
   margin-top: 20px;
@@ -563,7 +574,7 @@ h2.dark::before {
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.26);
 }
 
-#portfolio .box .card:hover {
+#portfolio .box:hover {
   transform: translate(-20px);
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
@@ -576,20 +587,49 @@ h2.dark::before {
   -o-transition: all 0.3s ease;
 }
 
-#portfolio .box .card img {
+#portfolio .box img {
   width: 100%;
   height: 200px;
   margin-bottom: 10px;
   border-radius: 5px;
 }
 
-#portfolio .box .card p {
+#portfolio .card-box img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#portfolio .box p {
   font-weight: 100;
   margin-bottom: 10px;
 }
 
-#portfolio .box .card a {
-  width: 120px;
+#portfolio .icon  i {
+  font-weight: bold;
+  font-size: 2rem;
+}
+#portfolio .icon  .p-icon {
+  font-size: 2rem;
+}
+
+#portfolio .card-box ul li {
+  margin-bottom: 10px;
+}
+
+#portfolio .card-box p {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+#portfolio .box a {
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#portfolio .card-box a {
   height: 40px;
   border: none;
   font-weight: bold;
