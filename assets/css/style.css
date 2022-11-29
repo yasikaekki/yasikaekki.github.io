@@ -297,11 +297,6 @@ h2.dark::before {
   transform: scale(1);
 }
 
-#nav .navbar-brand.dark span {
-  font-weight: bolder;
-  color: #191d21;
-}
-
 #nav .navbar-brand span {
   font-weight: bolder;
   color: #fff;
@@ -316,11 +311,6 @@ h2.dark::before {
   font-weight: bold;
 }
 
-#nav .navbar-nav.dark li a{
-  color: #191d21;
-  font-weight: bold;
-}
-
 /*  Brand */
 #banner {
   position: relative;
@@ -331,10 +321,6 @@ h2.dark::before {
 
 #banner span {
   color: #ff990d;
-}
-
-.title-text.dark {
-  color: #191d21;
 }
 
 #banner .site-title h1{
@@ -409,6 +395,7 @@ h2.dark::before {
   bottom: 15px;
 }
 
+
 .btn-floating-up i {
   margin-top: 10px;
 }
@@ -418,18 +405,9 @@ h2.dark::before {
   color: #fff;
 }
 
-.btn-floating-up.dark a {
-  margin-top: 10px;
-  color: #191d21;
-}
-
 .btn-floating-up a:hover {
   background-color: #6777ef;
   color: #fff;
-}
-.btn-floating-up.dark a:hover {
-  background-color: #6777ef;
-  color: #191d21;
 }
 
 /*  About */
@@ -530,10 +508,6 @@ h2.dark::before {
   padding: 80px 0;
 }
 
-#certificate ol {
-  margin-left: 6rem;
-}
-
 #certificate ol li {
   margin-top: 10px;
 }
@@ -605,14 +579,6 @@ h2.dark::before {
   margin-bottom: 10px;
 }
 
-#portfolio .icon  i {
-  font-weight: bold;
-  font-size: 2rem;
-}
-#portfolio .icon  .p-icon {
-  font-size: 2rem;
-}
-
 #portfolio .card-box ul li {
   margin-bottom: 10px;
 }
@@ -641,11 +607,6 @@ h2.dark::before {
   padding: 20px 0;
   color: #fff;
 }
-#footer.dark {
-  background-color: #334B94;
-  padding: 20px 0;
-  color: #191d21;
-}
 
 #footer ul li {
     margin-top: 10px;
@@ -655,7 +616,51 @@ h2.dark::before {
     text-decoration: none;
     color: #fff;
 }
-#footer.dark a {
-    text-decoration: none;
-    color: #191d21;
+
+@media screen and (min-width: 568px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  
+  .cards-wrapper .card {
+    margin: 3.5em auto 3.5em!important;
+    width: calc(80%/3)!important;
+  }
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-indicators button {
+  width: 2vh!important;
+  height: 2vh!important;
+  border-radius: 50%;
+  margin-bottom: 0.5rem!important;
+  background-color: #334B94!important;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 6vh!important;
+  height: 6vh!important; 
+  color: white !important;
+  border-radius: 50%;
+  background-color: #334B94!important;
+  top: 50%!important;
+}
+
+@media screen and (min-width: 567px) {
+  .cards-wrapper .card:not(:first-child){
+    display: none;
+  }
+}
+
+.icon .cards-wrapper  {
+  font-size: 2rem !important;
+}
+
+.icon .cards-wrapper i {
+  margin: 0.5em;
+}
+.icon .cards-wrapper p {
+  margin: 0.5em;
 }
