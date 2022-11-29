@@ -1,6 +1,48 @@
 let canvasKita = document.getElementById("myCanvas");
-canvasKita.width = 1349;
-canvasKita.height = 350;
+let a = window.matchMedia("(max-width: 360px)");
+let b = window.matchMedia("(max-width: 393px)");
+let c = window.matchMedia("(max-width: 412px)");
+let d = window.matchMedia("(max-width: 540px)");
+let e = window.matchMedia("(max-width: 720px)");
+let f = window.matchMedia("(max-width: 768px)");
+let g = window.matchMedia("(max-width: 820px)");
+let h = window.matchMedia("(max-width: 912px)");
+let i = window.matchMedia("(max-width: 1080px)");
+let j = window.matchMedia("(max-width: 1280px)");
+if (a.matches) { // If media query matches
+    canvasKita.width = 360;
+    canvasKita.height = 350;
+  } else if (b.matches) {
+    canvasKita.width = 393;
+    canvasKita.height = 350;
+  } else if (c.matches) {
+    canvasKita.width = 412;
+    canvasKita.height = 350;
+  } else if (d.matches) {
+    canvasKita.width = 540;
+    canvasKita.height = 350;
+  } else if (e.matches) {
+    canvasKita.width = 720;
+    canvasKita.height = 350;
+  } else if (f.matches) {
+    canvasKita.width = 768;
+    canvasKita.height = 350;
+  } else if (g.matches) {
+    canvasKita.width = 820;
+    canvasKita.height = 350;
+  } else if (h.matches) {
+    canvasKita.width = 912;
+    canvasKita.height = 350;
+  } else if (i.matches) {
+    canvasKita.width = 1080;
+    canvasKita.height = 350;
+  } else if (j.matches) {
+    canvasKita.width = 1280;
+    canvasKita.height = 350;
+  } else {
+      canvasKita.width = 1349;
+      canvasKita.height = 350;
+  }
 let ctx = canvasKita.getContext("2d");
 let imageData = ctx.getImageData(0, 0, canvasKita.width, canvasKita.height);
 
