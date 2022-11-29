@@ -426,7 +426,7 @@ h2.dark::before {
 @media screen and (max-width: 720px) {
   .back-to-up {
     position: fixed;
-    right: 40.5rem;
+    right: 1.5rem;
   }
 }
 @media screen and (max-width: 540px) {
