@@ -366,6 +366,12 @@ h2.dark::before {
   --animate-delay: 0.5s;
 }
 
+@media screen and (max-width: 767px) {
+  .ban-img {
+    top: 4rem;
+  }
+}
+
 .wave {
   position: absolute;
   bottom: 0;
@@ -563,7 +569,7 @@ h2.dark::before {
 
 /*  Certificate */
 #certificate {
-  padding: 80px 0;
+  padding: 80px 0!important;
 }
 
 #certificate ol li {
@@ -699,6 +705,15 @@ h2.dark::before {
     margin: 3.5em auto 3.5em!important;
     width: calc(80%/3)!important;
   }
+  .cards-wrappers {
+    display: flex;
+    margin: 1.5em auto 1.5em!important;
+  }
+  
+  .cards-wrappers .card {
+    margin: 0.5em!important;
+    width: calc(100%/3)!important;
+  }
 }
 
 .carousel-inner {
@@ -721,17 +736,11 @@ h2.dark::before {
   top: 50%!important;
 }
 
-@media screen and (min-width: 567px) {
-  .cards-wrapper .card:not(:first-child){
-    display: none;
-  }
-}
-
 .icon .cards-wrapper i {
-  font-size: 2rem !important;
+  font-size: 3.5rem !important;
   margin: 0.5em;
 }
 .icon .cards-wrapper p {
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
   margin: 0.5em;
 }
