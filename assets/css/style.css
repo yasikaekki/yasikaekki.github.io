@@ -397,8 +397,8 @@ h2.dark::before {
 
 .back-to-up {
   box-shadow: 0 2px 6px #acb5f6;
-  display: inline;
   position: fixed;
+  display: inline;
   background-color: #6777ef;
   width: 44px;
   height: 44px;
@@ -409,6 +409,63 @@ h2.dark::before {
   right: 15px;
   bottom: 15px;
   color: #fff;
+}
+
+@media only screen and (max-width: 720px) {
+  .back-to-up{
+    position: fixed;
+    display: inline;
+    right: 21rem;
+    bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .back-to-up{
+    position: fixed;
+    display: inline;
+    right: 22rem;
+    bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .back-to-up{
+    position: fixed;
+    display: inline;
+    right: 21rem;
+    bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .back-to-up{
+    position: fixed;
+    display: inline;
+    right: 22rem;
+    bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .back-to-up{
+    position: fixed;
+    display: inline;
+    right: 23rem;
+    bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .back-to-up{
+    position: fixed;
+    display: inline;
+    right: 24rem;
+    bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .back-to-up{
+    position: fixed;
+    display: inline;
+    right: 27rem;
+    bottom: 1.5rem;
+  }
 }
 
 .btn-floating i {
@@ -683,7 +740,7 @@ h2.dark::before {
 }
 
 .icon .cards-wrapper i {
-  font-size: 3.5rem !important;
+  font-size: 3rem !important;
   margin: 0.5em;
 }
 .icon .cards-wrapper p {
