@@ -675,14 +675,37 @@ h2.dark::before {
   color: #fff;
 }
 @media only screen and (max-width: 991px){ 
-  .address {
-    margin: 0 0 -10px 0;
+  .address .col-md-11 {
+    margin: 0 0 -10px 0!important;
   }
   .address i{
     position: absolute;
   }
   .address p {
     margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .address .col-md-11 {
+    margin: 0 0 -10px 0!important;
+  }
+  .address i{
+    position: absolute;
+  }
+  .address p {
+    margin-left: 0.3rem;
+  }
+}
+@media only screen and (min-width: 1074px) {
+  .address .col-md-11 {
+    margin: 0 0 -10px 0!important;
+  }
+  .address i{
+    position: absolute;
+  }
+  .address p {
+    margin-left: 0.3rem;
   }
 }
 #footer ul li {
