@@ -1,42 +1,50 @@
 let canvasKita = document.getElementById("myCanvas");
-let a = window.matchMedia("(max-width: 360px)");
-let b = window.matchMedia("(max-width: 393px)");
-let c = window.matchMedia("(max-width: 412px)");
-let d = window.matchMedia("(max-width: 540px)");
-let e = window.matchMedia("(max-width: 720px)");
-let f = window.matchMedia("(max-width: 768px)");
-let g = window.matchMedia("(max-width: 820px)");
-let h = window.matchMedia("(max-width: 912px)");
-let i = window.matchMedia("(max-width: 1080px)");
-let j = window.matchMedia("(max-width: 1280px)");
+let a = window.matchMedia("(max-width: 320px)");
+let b = window.matchMedia("(max-width: 360px)");
+let c = window.matchMedia("(max-width: 393px)");
+let d = window.matchMedia("(max-width: 412px)");
+let e = window.matchMedia("(max-width: 540px)");
+let f = window.matchMedia("(max-width: 600px)");
+let g = window.matchMedia("(max-width: 720px)");
+let h = window.matchMedia("(max-width: 768px)");
+let i = window.matchMedia("(max-width: 820px)");
+let j = window.matchMedia("(max-width: 912px)");
+let k = window.matchMedia("(max-width: 1080px)");
+let l = window.matchMedia("(max-width: 1280px)");
 if (a.matches) { // If media query matches
-    canvasKita.width = 360;
+    canvasKita.width = 320;
     canvasKita.height = 350;
   } else if (b.matches) {
-    canvasKita.width = 393;
+    canvasKita.width = 360;
     canvasKita.height = 350;
   } else if (c.matches) {
-    canvasKita.width = 412;
+    canvasKita.width = 393;
     canvasKita.height = 350;
   } else if (d.matches) {
-    canvasKita.width = 540;
+    canvasKita.width = 412;
     canvasKita.height = 350;
   } else if (e.matches) {
-    canvasKita.width = 720;
+    canvasKita.width = 540;
     canvasKita.height = 350;
   } else if (f.matches) {
-    canvasKita.width = 768;
+    canvasKita.width = 600;
     canvasKita.height = 350;
   } else if (g.matches) {
-    canvasKita.width = 820;
+    canvasKita.width = 720;
     canvasKita.height = 350;
   } else if (h.matches) {
-    canvasKita.width = 912;
+    canvasKita.width = 768;
     canvasKita.height = 350;
   } else if (i.matches) {
-    canvasKita.width = 1080;
+    canvasKita.width = 820;
     canvasKita.height = 350;
   } else if (j.matches) {
+    canvasKita.width = 912;
+    canvasKita.height = 350;
+  } else if (k.matches) {
+    canvasKita.width = 1080;
+    canvasKita.height = 350;
+  } else if (l.matches) {
     canvasKita.width = 1280;
     canvasKita.height = 350;
   } else {

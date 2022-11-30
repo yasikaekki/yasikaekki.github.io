@@ -397,6 +397,7 @@ h2.dark::before {
 
 .back-to-up {
   box-shadow: 0 2px 6px #acb5f6;
+  display: inline;
   position: fixed;
   background-color: #6777ef;
   width: 44px;
@@ -407,69 +408,14 @@ h2.dark::before {
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
-}
-
-@media screen and (max-width: 912px) {
-  .back-to-up {
-    position: fixed;
-    right: 28.5rem;
-    bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .back-to-up {
-    position: fixed;
-    right: 34.5rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .back-to-up {
-    position: fixed;
-    right: 37.5rem;
-  }
-}
-@media screen and (max-width: 720px) {
-  .back-to-up {
-    position: fixed;
-    right: 40.5rem;
-  }
-}
-@media screen and (max-width: 540px) {
-  .back-to-up {
-    position: fixed;
-    right: 51.5rem;
-  }
-}
-@media screen and (max-width: 412px) {
-  .back-to-up {
-    position: fixed;
-    right: 59.5rem;
-  }
-}
-@media screen and (max-width: 393px) {
-  .back-to-up {
-    position: fixed;
-    right: 60.5rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .back-to-up {
-    position: fixed;
-    right: 63.5rem;
-  }
-}
-
-.btn-floating-up i {
-  margin-top: 10px;
-}
-
-.btn-floating-up a {
-  margin-top: 10px;
   color: #fff;
 }
 
-.btn-floating-up a:hover {
+.btn-floating i {
+  margin-top: 10px;
+}
+
+.btn-floating a:hover {
   background-color: #394eea;
   color: #fff;
 }
@@ -685,7 +631,7 @@ h2.dark::before {
     color: #ff990d;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px)  {
   #footer .info h3, #footer .info a{
     margin-left: 1rem;
   }
