@@ -704,8 +704,16 @@ h2.dark::before {
   .address i{
     position: absolute;
   }
+}
+@media only screen and (min-width: 1280px) {
+  .address .col-md-11 {
+    margin: 0 0 -10px 0!important;
+  }
   .address p {
-    margin-left: 0.3rem;
+    margin-left: 0;
+  }
+  .address i{
+    position: absolute;
   }
 }
 #footer ul li {
