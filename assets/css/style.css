@@ -331,6 +331,15 @@ h2.dark::before {
   color: #ff990d;
 }
 
+@media only screen and (min-width: 992px) {
+  #banner .site-title h1 {
+    position: absolute;
+  }
+  #banner .site-title h4 {
+    margin-top: 65px;
+  }
+}
+
 #banner .site-title h1{
   --animate-delay: 0.6s;
 }
