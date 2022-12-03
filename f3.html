@@ -189,13 +189,9 @@
     <script>
         // Get the button
         var mybutton = document.getElementById("up");
-        var brand = document.getElementById("navtitle");
-        var nav = document.getElementById("navbrand");
         var style = document.createElement('style');
 
-        nav.style.display = "block";
         mybutton.style.display = "none";
-        brand.style.display = "none";
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
 
@@ -204,13 +200,7 @@
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";
-            } if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                nav.style.display = "none";
-                brand.style.display = "block";
-            } else {
-                nav.style.display = "block";
-                brand.style.display = "none";
-            }
+            } 
         }
     </script>   
 </body>

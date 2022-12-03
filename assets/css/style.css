@@ -798,8 +798,25 @@ h2.dark::before {
   margin: 0.5em;
 }
 
-#other {
+#details {
   padding-top: 5%;
+}
+
+#details .card {
+  display: grid;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+}
+
+#details .card.dark {
+  display: grid;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #191d21;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.26);
 }
 
 #feature {

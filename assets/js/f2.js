@@ -23,7 +23,7 @@ celciusInput.addEventListener('input', function(){
 
 
 /* Reamur to Celcius, Fahrenheit and Kelvin */
-celciusInput.addEventListener('input', function(){
+reamurInput.addEventListener('input', function(){
     let rTemp = parseFloat(reamurInput.value);
     let cTemp = rTemp*(5/4);
     let fTemp = (rTemp*(9/4)) + 32;
