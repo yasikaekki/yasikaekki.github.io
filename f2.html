@@ -69,24 +69,26 @@
                 <div class="col-lg-5">
                     <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <div class="card-body">
-                            <h3 class="text-center mb-4">Kalkulator Sederhana</h3>
-                            <label>Input 1</label>
-                            <div class="input-group mb-3">
-                                <input class="form-control" type="number" id="num1">
+                            <h3 class="text-center mb-4">Konversi Suhu</h3>
+                            <label>Celcius</label>
+                            <div class="input-group mb-3" id="celcius">
+                                <span class="input-group-text" id="basic-addon1">&#8451</span>
+                                <input type="number" class="form-control">
                             </div>
-                            <label>Input 2</label>
-                            <div class="input-group mb-3">
-                                <input class="form-control" type="number" id="num2">
+                            <label>Reamur</label>
+                            <div class="input-group mb-3" id="reamur">
+                                <span class="input-group-text" id="basic-addon1">°R</span>
+                                <input type="number" class="form-control">
                             </div>
-                            <div class="d-grid d-md-flex mx-auto mb-3">
-                                <button class="btn btn-light col-3" id="add">+</button>
-                                <button class="btn btn-light col-3" id="sub">-</button>
-                                <button class="btn btn-light col-3" id="mul">x</button>
-                                <button class="btn btn-light col-3" id="div">/</button>
+                            <label>Fahrenheit</label>
+                            <div class="input-group mb-3" id="fahrenheit">
+                                <span class="input-group-text" id="basic-addon1">&#8457</span>
+                                <input type="number" class="form-control">
                             </div>
-                            <label>Hasil</label>
-                            <div class="input-group mb-3">
-                                <input class="form-control" type="number" disabled id="result">
+                            <label>Kelvin</label>
+                            <div class="input-group mb-3" id="kelvin">
+                                <span class="input-group-text" id="basic-addon1">&#8490</span>
+                                <input type="number" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -166,7 +168,7 @@
         </div>
     </section>
     
-    <script src="./assets/js/f1.js"></script>
+    <script src="./assets/js/f2.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

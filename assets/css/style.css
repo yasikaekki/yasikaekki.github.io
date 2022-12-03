@@ -797,3 +797,32 @@ h2.dark::before {
   font-size: 2rem !important;
   margin: 0.5em;
 }
+
+#other {
+  padding-top: 5%;
+}
+
+#feature {
+  padding-top: 5%;
+}
+
+#feature .card {
+  display: grid;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+}
+
+#feature .card.dark {
+  display: grid;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #191d21;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.26);
+}
+
+#feature.dark h3, #feature.dark label {
+  color: #fff;
+}
