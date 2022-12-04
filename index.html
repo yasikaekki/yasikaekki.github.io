@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 animate__animated animate__fadeInDown">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><span>Beranda</span></a>
+                  <a class="nav-link"href="#"><span>Beranda</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about"><span>Tentang</span></a>
@@ -527,7 +527,9 @@
         </div>
       </div>
     </section>
-
+    <div class="d-md-flex justify-content-center" id="canvas">
+      <h4 class="h3"><span class="quotes"></span></h4>
+    </div>
     <canvas id="myCanvas"></canvas> 
     <script src="./assets/js/main.js"></script>
 
@@ -642,6 +644,18 @@
       typeSpeed: 150,
       backSpeed: 50,
       startDelay: 7800,
+      loop: true
+      });
+      var typing = new Typed(".quotes", {
+          strings: [
+              "Buang semua pikiran tak bergunamu itu!",
+              "Hanya satu yang bisa kau lakukan saat ini!",
+              "Satu hal yang harus selalu kau kuasai ialah bayangkan dirimu dalam kondisi terkuat!",
+              "Kau tak butuh musuh dari luar!",
+              "Satu - satunya musuh yang harus kau lawan ialah bayangan keraguanmu sendiri!!!"
+      ],
+      typeSpeed: 150,
+      backSpeed: 50,
       loop: true
       });
     </script>

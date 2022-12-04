@@ -306,7 +306,7 @@ h2.dark::before {
   color: #ff990d;
 }
 
-#nav .navbar-nav .nav-item ul li {
+#nav .navbar-nav ul li {
   padding: 0 10px;
 }
 
@@ -887,5 +887,12 @@ h2.dark::before {
 }
 
 #feature.dark h3, #feature.dark label {
+  color: #fff;
+}
+
+#canvas h4 {
+  position: absolute;
+  margin: 0 80px;
+  margin-top: 12%;
   color: #fff;
 }
