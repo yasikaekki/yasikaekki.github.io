@@ -819,6 +819,52 @@ h2.dark::before {
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.26);
 }
 
+#details .box:hover {
+  transform: translate(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+#details .box img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+#details .box p {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+#details .box a {
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#details .card-box img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#details .card-box ul li {
+  margin-bottom: 10px;
+}
+
+#details .card-box p {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
 #feature {
   padding-top: 5%;
 }
