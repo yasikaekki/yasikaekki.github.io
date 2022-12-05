@@ -909,36 +909,36 @@ h2.dark::before {
 }
 @media only screen and (max-width: 950px) {
   #canvas h4 {
-    margin-top: 18%;
+    margin-top: 20%;
   }
 }
 @media only screen and (max-width: 850px) {
   #canvas h4 {
-    margin-top: 20%;
+    margin-top: 22%;
   }
 }
 @media only screen and (max-width: 750px) {
   #canvas h4 {
-    margin-top: 22%;
+    margin-top: 24%;
   }
 }
 @media only screen and (max-width: 650px) {
   #canvas h4 {
-    margin-top: 24%;
+    margin-top: 26%;
   }
 }
 @media only screen and (max-width: 550px) {
   #canvas h4 {
-    margin-top: 26%;
+    margin-top: 28%;
   }
 }
 @media only screen and (max-width: 450px) {
   #canvas h4 {
-    margin-top: 28%;
+    margin-top: 30%;
   }
 }
 @media only screen and (max-width: 350px) {
   #canvas h4 {
-    margin-top: 30%;
+    margin-top: 32%;
   }
 }
