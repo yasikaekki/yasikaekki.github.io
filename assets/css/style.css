@@ -896,3 +896,49 @@ h2.dark::before {
   margin-top: 12%;
   color: #fff;
 }
+
+@media only screen and (max-width: 1115px) {
+  #canvas h4 {
+    margin-top: 14%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #canvas h4 {
+    margin-top: 16%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #canvas h4 {
+    margin-top: 18%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #canvas h4 {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #canvas h4 {
+    margin-top: 22%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #canvas h4 {
+    margin-top: 24%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #canvas h4 {
+    margin-top: 26%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #canvas h4 {
+    margin-top: 28%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #canvas h4 {
+    margin-top: 30%;
+  }
+}
