@@ -1,12 +1,7 @@
-let celciusInput = document.querySelector('#celcius > input');
-let reamurInput = document.querySelector('#reamur > input');
-let fahrenheitInput = document.querySelector('#fahrenheit > input');
-let kelvinInput = document.querySelector('#kelvin > input');
-
-
-function roundNumber(number){
-    return Math.round(number*100)/100;
-}
+let celciusInput = document.getElementById('celcius');
+let reamurInput = document.getElementById('reamur');
+let fahrenheitInput = document.getElementById('fahrenheit');
+let kelvinInput = document.getElementById('kelvin');
 
 
 /* Celcius to Reamur, Fahrenheit and Kelvin */
@@ -16,9 +11,9 @@ celciusInput.addEventListener('input', function(){
     let fTemp = (cTemp*(9/5)) + 32;
     let kTemp = cTemp + 273.15;
 
-    reamurInput.value = roundNumber(rTemp);
-    fahrenheitInput.value = roundNumber(fTemp);
-    kelvinInput.value = roundNumber(kTemp);
+    reamurInput.value = rTemp;
+    fahrenheitInput.value = fTemp;
+    kelvinInput.value = kTemp;
 })
 
 
@@ -29,9 +24,9 @@ reamurInput.addEventListener('input', function(){
     let fTemp = (rTemp*(9/4)) + 32;
     let kTemp = (rTemp*(5/4)) + 273.15;
 
-    celciusInput.value = roundNumber(cTemp);
-    fahrenheitInput.value = roundNumber(fTemp);
-    kelvinInput.value = roundNumber(kTemp);
+    celciusInput.value = cTemp;
+    fahrenheitInput.value = fTemp;
+    kelvinInput.value = kTemp;
 })
 
 
@@ -42,9 +37,9 @@ fahrenheitInput.addEventListener('input', function(){
     let rTemp = (fTemp-32)*(4/9);
     let kTemp = (fTemp -32)*(5/9)+273.15;
 
-    celciusInput.value = roundNumber(cTemp);
-    reamurInput.value = roundNumber(rTemp);
-    kelvinInput.value = roundNumber(kTemp);
+    celciusInput.value = cTemp;
+    reamurInput.value = rTemp;
+    kelvinInput.value = kTemp;
 })
 
 /* Kelvin to Celcius, Reamur and Fahrenheit */
@@ -54,7 +49,7 @@ kelvinInput.addEventListener('input', function(){
     let rTemp = (kTemp-273.15)*(4/9);
     let fTemp = (kTemp - 273.15)*(9/5)+32;
 
-    celciusInput.value = roundNumber(cTemp);
-    reamurInput.value = roundNumber(rTemp);
-    fahrenheitInput.value = roundNumber(fTemp);
+    celciusInput.value = cTemp;
+    reamurInput.value = rTemp;
+    fahrenheitInput.value = fTemp;
 })

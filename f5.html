@@ -68,29 +68,25 @@
     <section id="feature">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-5">
+                <div class="col-md-5">
                     <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <div class="card-body">
-                            <h3 class="text-center mb-4">Konversi Suhu</h3>
-                            <label>Celcius</label>
+                            <h3 class="text-center mb-4">Konversi Kecepatan</h3>
+                            <label>MPH</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">&#8451</span>
-                                <input type="number" class="form-control" id="celcius">
+                                <input class="form-control" type="number" id="mph">
                             </div>
-                            <label>Reamur</label>
+                            <label>Knots</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">°R</span>
-                                <input type="number" class="form-control" id="reamur">
+                                <input class="form-control" type="number" id="knots">
                             </div>
-                            <label>Fahrenheit</label>
+                            <label>KPH</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">&#8457</span>
-                                <input type="number" class="form-control" id="fahrenheit">
+                                <input class="form-control" type="number" id="kph">
                             </div>
-                            <label>Kelvin</label>
+                            <label>Mach</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">&#8490</span>
-                                <input type="number" class="form-control" id="kelvin">
+                                <input class="form-control" type="number" id="mach">
                             </div>
                         </div>
                     </div>
@@ -173,13 +169,13 @@
         </div>
     </section>
     
-    <script src="./assets/js/f2.js"></script>
+    <script src="./assets/js/f5.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
@@ -227,7 +223,7 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";
