@@ -44,7 +44,7 @@ stons.addEventListener("input", function() {
 });
 
 kilo.addEventListener("input", function() {
-    let kg = thist.value;
+    let kg = this.value;
     let lb = kg*2.2046;
     let oz = kg*35.274;
     let st = kg*0.1574;

@@ -90,3 +90,37 @@ meter.addEventListener("input", function() {
     centi.value = cm;
     kilo.value = km;
 })
+
+centi.addEventListener("input", function() {
+    let cm = this.value;
+    let ft = cm*0.032808;
+    let inc = cm*0.39370;
+    let yd = cm*0.010936;
+    let mi = cm*0.0000062137;
+    let m = cm/100;
+    let km = cm/100000;
+
+    feet.value = ft;
+    incs.value = inc;
+    yards.value = yd;
+    miles.value = mi;
+    meter.value = m;
+    kilo.value = km;
+})
+
+kilo.addEventListener("input", function() {
+    let km = this.value;
+    let ft = km*3280.8;
+    let inc = km*39370;
+    let yd = km*1093.6;
+    let mi = km*0.62137;
+    let m = km*1000;
+    let cm = km*100000;
+
+    feet.value = ft;
+    incs.value = inc;
+    yards.value = yd;
+    miles.value = mi;
+    meter.value = m;
+    centi.value = cm;
+})
