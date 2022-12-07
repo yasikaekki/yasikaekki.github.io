@@ -32,12 +32,15 @@
                 <a class="nav-link" href="index.html#about"><span>Tentang</span></a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="index.html#skill"><span>Keahlian</span></a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="index.html#certificate"><span>Pelatihan</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item link">
                 <a class="nav-link" href="index.html#portfolio"><span>Portfolio</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item link">
                 <a class="nav-link" href="#footer"><span>Kontak</span></a>
               </li>
               <li class="nav-item dropdown">
@@ -219,7 +222,7 @@
           <ul class="list-unlistyled list-inline">
             <li><a href="index.html">Beranda</a></li>
             <li><a href="index.html#about">Tentang</a></li>
-            <li><a href="index.html#what">Apa yang saya tawarkan?</a></li>
+            <li><a href="index.html#skill">Keahlian</a></li>
             <li><a href="index.html#certificate">Pelatihan & Sertifikat</a></li>
             <li><a href="index.html#portfolio">Portfolio</a></li>
           </ul>
@@ -303,6 +306,21 @@
   backSpeed: 50,
   loop: true
   });
+</script>
+<script>
+  const li = document.querySelectorAll('.link');
+  const sec = document.querySelectorAll('section');
+
+  function activeMenu() {
+    let len = sec.length;
+
+    while(--len && window.scrollY-1097 < sec[len].offsetTop) {}
+    li.forEach(ltx => ltx.classList.remove('active'));
+    li[len].classList.add('active');
+  }
+
+  activeMenu();
+  window.addEventListener("scroll", activeMenu);
 </script>
   <script>
       // Get the button

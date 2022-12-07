@@ -314,9 +314,17 @@ h2.dark::before {
   color: #fff;
   font-weight: bold;
 }
+
+#nav .navbar-nav .active a{
+  color: #ff990d;
+  border-bottom: 3px solid #ff990d;
+}
+
 #nav .navbar-nav li a:hover{
   color: #ff990d;
+  border-bottom: 3px solid #ff990d;
   font-weight: bold;
+  border-bottom: 3px solid #ff990d;
 }
 
 /*  Brand */
@@ -557,23 +565,23 @@ h2.dark::before {
   margin-top: 10px;
 }
 
-/*  What */
-#what {
+/*  Skill */
+#skill {
   background-color: #DEE2E9;
   color: #000;
   padding: 80px 0;
 }
 
-#what i {
+#skill i {
   font-size: 5rem;
   color: #334B94;
 }
-#what.dark i {
+#skill.dark i {
   font-size: 5rem;
   color: white;
 }
 
-#what h4 {
+#skill h4 {
   padding: 5px;
   margin-top: 25px;
   text-transform: uppercase;
