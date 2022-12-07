@@ -323,8 +323,6 @@ h2.dark::before {
 #nav .navbar-nav li .nav-link:hover{
   color: #ff990d;
   border-bottom: 3px solid #ff990d;
-  font-weight: bold;
-  border-bottom: 3px solid #ff990d;
 }
 
 /*  Brand */

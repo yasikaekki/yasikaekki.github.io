@@ -545,7 +545,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 mt-3">
-            <h3>Yasika Ekki</h3>
+            <h3>Informasi</h3>
             <p>Yasika Ekki merupakan sebuah website yang menyajikan tentang informasi personal pribadi yang digunakan untuk mencari dan melamar pekerjaan. Pembuatan website ini menggunakan HTML, CSS, dan Javascript</p>
             <a href="https://www.linkedin.com/in/yasika-ekki-4a61ba215" class="btn btn-outline-primary">
               <i class="fab fa-linkedin"></i> 
@@ -561,7 +561,7 @@
             </a>
           </div>
           <div class="col-md-4 mt-3 info">
-            <h3>Informasi</h3>
+            <h3>Tautan</h3>
             <ul class="list-unlistyled list-inline">
               <li><a href="#">Beranda</a></li>
               <li><a href="#about">Tentang</a></li>
@@ -668,13 +668,16 @@
     </script>
     <script>
       const li = document.querySelectorAll('.nav-item');
+      const dis = document.querySelectorAll('.nav-item > a');
       const sec = document.querySelectorAll('section');
 
       function activeMenu() {
         let len = sec.length;
 
         while(--len && window.scrollY-357 < sec[len].offsetTop) {}
+        dis.forEach(ltx => ltx.classList.remove('disabled'));
         li.forEach(ltx => ltx.classList.remove('active'));
+        dis[len].classList.add('disabled');
         li[len].classList.add('active');
       }
 
