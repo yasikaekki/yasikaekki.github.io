@@ -29,28 +29,30 @@
                     <a class="nav-link" href="index.html"><span>Beranda</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#about"><span>Tentang</span></a>
+                    <a class="nav-link" href="f1.html"><span>Kalkulator</span></a>
+                </li>
+                <li class="nav-item link">
+                    <a class="nav-link" href="f2.html"><span>Suhu</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#skill"><span>Keahlian</span></a>
+                    <a class="nav-link" href="f3.html"><span>Panjang</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#certificate"><span>Pelatihan</span></a>
+                    <a class="nav-link" href="f4.html"><span>Massa</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#portfolio"><span>Portfolio</span></a>
+                    <a class="nav-link" href="f5.html"><span>Kecepatan</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item link">
                     <a class="nav-link" href="#footer"><span>Kontak</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Lainnya</span></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item text-primary" href="f1.html">Kalkulator Sederhana</a>
-                        <a class="dropdown-item text-primary" href="f2.html">Konversi Suhu</a>
-                        <a class="dropdown-item text-primary" href="f3.html">Konversi Panjang</a>
-                        <a class="dropdown-item text-primary" href="f4.html">Konversi Massa</a>
-                        <a class="dropdown-item text-primary" href="f5.html">Konversi Kecepatan</a>
+                        <a class="dropdown-item text-primary" href="index.html#about">Tentang</a>
+                        <a class="dropdown-item text-primary" href="index.html#skill">Keahlian</a>
+                        <a class="dropdown-item text-primary" href="index.html#certificate">Pelatihan</a>
+                        <a class="dropdown-item text-primary" href="index.html#portfolio">Portfolio</a>
                     </div>
                 </li>
                 <li class="nav-item ms-2 radio-btn">
@@ -132,10 +134,11 @@
             <h3>Informasi</h3>
             <ul class="list-unlistyled list-inline">
                 <li><a href="index.html">Beranda</a></li>
-                <li><a href="index.html#about">Tentang</a></li>
-                <li><a href="index.html#skill">Keahlian</a></li>
-                <li><a href="index.html#certificate">Pelatihan & Sertifikat</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="f1.html">Kalkulator Sederhana</a></li>
+                <li><a href="f2.html">Konversi Suhu</a></li>
+                <li><a href="f3.html">Konversi Panjang</a></li>
+                <li><a href="f4.html">Konversi Massa</a></li>
+                <li><a href="f5.html">Konversi Kecepatan</a></li>
             </ul>
             </div>
             <div class="col-md-4 mt-3">
@@ -227,7 +230,7 @@
         function activeMenu() {
           let len = sec.length;
   
-          while(--len && window.scrollY-350 < sec[len].offsetTop) {}
+          while(--len && window.scrollY-397 < sec[len].offsetTop) {}
           li.forEach(ltx => ltx.classList.remove('active'));
           li[len].classList.add('active');
         }
