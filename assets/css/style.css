@@ -514,8 +514,9 @@ h2.dark::before {
 
 #banner .animated-item {
   position: absolute;
-  height: 1.47rem;
-  line-height: 1.47rem;
+  top: -10px;
+  height: 45px;
+  line-height: 45px;
   display: inline-block;
   overflow: hidden;
 }
@@ -526,9 +527,15 @@ h2.dark::before {
   color: #fff;
 }
 
+@media only screen and (max-width: 991px) {
+  #banner .animated-info {
+    margin-bottom: 2.5rem;
+  }
+}
+
 @keyframes animate {
   0% {
-    top: 24px;
+    top: 14px;
   }
   5% {
     top: 0px;
@@ -537,31 +544,31 @@ h2.dark::before {
     top: 0px;
   }
   20% {
-    top: -24px;
+    top: -44px;
   }
   30% {
-    top: -24px;
+    top: -44px;
   }
   40% {
-    top: -48px;
+    top: -90px;
   }
   50% {
-    top: -48px;
+    top: -90px;
   }
   60% {
-    top: -72px;
+    top: -134px;
   }
   70% {
-    top: -72px;
+    top: -134px;
   }
   80% {
-    top: -96px;
+    top: -180px;
   }
   90% {
-    top: -96px;
+    top: -180px;
   }
   100% {
-    top: -118px;
+    top: -214px;
   }
 }
 
