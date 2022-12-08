@@ -511,17 +511,43 @@ h2.dark::before {
   transform: rotate(-45deg);
   bottom: 1px;
 }
+
 #nav .navbar-toggler .navbar-toggler-icon {
-  background: var(--bs-navbar-color);
+  background: #fff;
   display: block;
-  width: 100%;
+  width: 75%;
   height: 2px;
-  margin: 5px 0;
+  margin: 6px 0;
   transition: all 0.4s ease;
   position: relative;
 }
 
-@media only screen and (min-width: 992px) {
+#nav .navbar-nav .nav-link {
+  overflow: hidden;
+}
+
+#nav .navbar-nav .nav-link span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+#nav .navbar-nav .nav-link span:before {
+  position: absolute;
+  top: 30px;
+  content: attr(data-hover);
+  transform: translate3d(0, 0, 0);
+}
+#nav .navbar-nav .nav-link:focus,
+#nav .navbar-nav .nav-link:hover {
+  color: #ff990d;
+  font-weight: bold;
+}
+#nav .navbar-nav .nav-link:focus span,
+#nav .navbar-nav .nav-link:hover span {
+  transform: translateY(-125%);
+}
+
+/* @media only screen and (min-width: 992px) {
   #nav .navbar-nav .active .nav-link {
     color: #ff990d;
     border-bottom: 3px solid #ff990d;
@@ -537,7 +563,7 @@ h2.dark::before {
   #nav .navbar-nav li .nav-link:hover {
     color: #ff990d;
   }
-}
+} */
 
 /*  Brand */
 #banner {
@@ -573,6 +599,13 @@ h2.dark::before {
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
+
+@media only screen and (max-width: 767px) {
+  #banner .animated-item {
+    font-size: 22px !important;
+  }
+}
+
 #banner .animated-item:nth-child(2n + 2) {
   animation-delay: 2s;
 }
@@ -750,7 +783,7 @@ h2.dark::before {
   box-shadow: 0 2px 6px #acb5f6;
   position: fixed;
   display: inline;
-  background-color: #6777ef;
+  background-color: #0a72f9;
   width: 44px;
   height: 44px;
   text-align: center;
@@ -824,7 +857,7 @@ h2.dark::before {
 }
 
 .btn-floating a:hover {
-  background-color: #394eea;
+  background-color: #4254f4;
   color: #fff;
 }
 
