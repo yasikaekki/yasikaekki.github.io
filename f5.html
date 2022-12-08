@@ -22,6 +22,8 @@
             <a class="navbar-brand animate__animated animate__fadeInDown" href="index.html"><span>Yasika Ekki</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 animate__animated animate__fadeInDown">
@@ -229,10 +231,10 @@
           let len = sec.length;
   
           while(--len && window.scrollY-357 < sec[len].offsetTop) {}
-          dis.forEach(ltx => ltx.classList.remove('disabled'));
-          li.forEach(ltx => ltx.classList.remove('active'));
-          dis[len].classList.add('disabled');
-          li[len].classList.add('active');
+          dis.forEach(ltx => ltx.classList.add('disabled'));
+          li.forEach(ltx => ltx.classList.add('active'));
+          dis[len].classList.remove('disabled');
+          li[len].classList.remove('active');
         }
   
         activeMenu();
@@ -248,7 +250,7 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";

@@ -485,6 +485,42 @@ h2.dark::before {
   font-weight: bold;
 }
 
+#nav .navbar-light .navbar-toggler-icon {
+  background: none;
+}
+
+#nav .navbar-toggler {
+  border: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+#nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#nav .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:first-child {
+  transform: rotate(45deg);
+  top: 6px;
+}
+#nav .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(2) {
+  display: none;
+}
+#nav .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:last-child {
+  transform: rotate(-45deg);
+  bottom: 1px;
+}
+#nav .navbar-toggler .navbar-toggler-icon {
+  background: var(--bs-navbar-color);
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
 @media only screen and (min-width: 992px) {
   #nav .navbar-nav .active .nav-link {
     color: #ff990d;
@@ -516,6 +552,63 @@ h2.dark::before {
 }
 
 #banner .animated-info {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 260px;
+}
+
+#banner .animated-item {
+  color: #fff;
+}
+
+#banner .animated-item {
+  font-size: 28px;
+  line-height: inherit;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 6s linear infinite 0s;
+}
+#banner .animated-item:nth-child(2n + 2) {
+  animation-delay: 2s;
+}
+#banner .animated-item:nth-child(3n + 3) {
+  animation-delay: 4s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* #banner .animated-info {
   position: relative;
   margin-bottom: 6rem;
 }
@@ -578,7 +671,7 @@ h2.dark::before {
   100% {
     top: -214px;
   }
-}
+} */
 
 @media only screen and (min-width: 992px) {
   #banner .site-title h1 {
