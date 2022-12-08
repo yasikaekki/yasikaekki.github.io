@@ -485,15 +485,15 @@ h2.dark::before {
   font-weight: bold;
 }
 
-#nav .navbar-light .navbar-toggler-icon {
+#nav .navbar-nav .navbar-toggler-icon {
   background: none;
 }
 
 #nav .navbar-toggler {
   border: 0;
   padding: 0;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 40px;
   margin-right: 10px;
 }
 #nav .navbar-toggler:focus {
@@ -602,7 +602,7 @@ h2.dark::before {
 
 @media only screen and (max-width: 767px) {
   #banner .animated-item {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 }
 
