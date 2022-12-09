@@ -334,6 +334,12 @@
   color: #6777ef;
 }
 
+@media only screen and (max-width: 912px){
+  html, body {
+    overflow: auto;
+  }
+}
+
 body.dark {
   background-color: #191d21;
   color: white;
@@ -564,6 +570,10 @@ h2.dark::before {
     color: #ff990d;
   }
 } */
+
+body {
+  margin: 0; height: 100%; overflow: hidden;
+}
 
 /*  Brand */
 #banner {

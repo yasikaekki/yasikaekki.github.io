@@ -53,7 +53,7 @@ if (a.matches) { // If media query matches
     canvasKita.width = 1280;
     canvasKita.height = 350;
   } else if (n.matches) {
-    canvasKita.width = 1349;
+    canvasKita.width = 1366;
     canvasKita.height = 350;
   } else {
       canvasKita.width = 1920;
