@@ -571,10 +571,6 @@ h2.dark::before {
   }
 } */
 
-body {
-  margin: 0; height: 100%; overflow: hidden;
-}
-
 /*  Brand */
 #banner {
   position: relative;
