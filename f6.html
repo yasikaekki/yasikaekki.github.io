@@ -78,42 +78,24 @@
                 <div class="col-md-5">
                     <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <div class="card-body">
-                            <h3 class="text-center mb-4">Konversi Panjang</h3>
-                            <label>Feet</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Ft</span>
-                                <input type="number" class="form-control" id="ft">
+                            <h3 class="text-center mb-4">Konversi Warna</h3>
+                            <div class="d-flex justify-content-center">
+                                <div class="card" style="width: 10rem; height: 10rem;" id="box-color"></div>
                             </div>
-                            <label>Inces</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">In</span>
-                                <input type="number" class="form-control" id="inc">
+
+                            <label>RGB</label>
+                            <div class="input-group mb-3" id="validation-1">
+                                <span class="input-group-text" id="basic-addon1">RGB</span>
+                                <input class="form-control" placeholder="rgb(255,255,255)" type="text" id="rgb" oninput="toHex()">
                             </div>
-                            <label>Yeards</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Yd</span>
-                                <input type="number" class="form-control" id="yd">
+                            <p id="invalid-0" class="text-danger card-text"></p>
+                            
+                            <label>Hex</label>
+                            <div class="input-group mb-3" id="validation-2">
+                                <span class="input-group-text" id="basic-addon1">Hex</span>
+                                <input class="form-control" placeholder="#ffffff" type="text" id="hex" oninput="toRgb()">
                             </div>
-                            <label>Miles</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Mi</span>
-                                <input type="number" class="form-control" id="mi">
-                            </div>
-                            <label>Meter</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">M</span>
-                                <input type="number" class="form-control" id="m">
-                            </div>
-                            <label>Centimeter</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Cm</span>
-                                <input type="number" class="form-control" id="cm">
-                            </div>
-                            <label>Kilometer</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Km</span>
-                                <input type="number" class="form-control" id="km">
-                            </div>
+                            <p id="invalid-1" class="text-danger card-text"></p>
                         </div>
                     </div>
                 </div>
@@ -195,7 +177,7 @@
         </div>
     </section>
     
-    <script src="./assets/js/f3.js"></script>
+    <script src="./assets/js/f6.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

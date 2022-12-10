@@ -1368,3 +1368,36 @@ h2.dark::before {
     margin-top: 32%;
   }
 }
+
+.valid-success::before {
+  content: "\f058";
+  color: #198754!important;
+  font-family: FontAwesome;
+  position: absolute;
+  right: 12px;
+  top: 7px;
+  z-index: 1000;
+}
+
+.valid-failed::before {
+  content: "\f057";
+  color: #dc3545!important;
+  font-family: FontAwesome;
+  position: absolute;
+  right: 12px;
+  top: 7px;
+  z-index: 1000;
+}
+
+#invalid-0,#invalid-1 {
+  margin-top: -16px;
+}
+
+#validation-1 .invalid, #validation-2 .invalid {
+  color: #dc3545!important;
+  border: 2px solid #dc3545!important;
+}
+#validation-1 .valid, #validation-2 .valid {
+  color: #198754!important;
+  border: 2px solid #198754!important;
+}
