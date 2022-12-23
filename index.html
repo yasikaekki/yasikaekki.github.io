@@ -53,7 +53,9 @@
                     <a class="dropdown-item text-primary" href="f3.html">Konversi Panjang</a>
                     <a class="dropdown-item text-primary" href="f4.html">Konversi Massa</a>
                     <a class="dropdown-item text-primary" href="f5.html">Konversi Kecepatan</a>
-                    <a class="dropdown-item text-primary" href="f6.html">Konversi Warna</a>
+                    <a class="dropdown-item text-primary" href="f6.html">Konversi Decimal Binary</a>
+                    <a class="dropdown-item text-primary" href="f7.html">Konversi Warna</a>
+                    <a class="dropdown-item text-primary" href="f8.html">Gradient Generator</a>
                   </div>
                 </li>
                 <li class="nav-item ms-2 radio-btn">
@@ -96,10 +98,6 @@
               </h4>
             </div> -->
             <p class="animate__animated animate__fadeInLeft animate__delay-1s">Terima kasih telah mengunjungi website saya, semoga anda tertarik dan selamat menikmati</p>
-            <div class="d-flex animate__animated animate__zoomIn animate__delay-1s">
-              <p class="fs-4 fw-bold" id="count" style="color: #ff990d;"></p>
-              <p class="fs-4">&nbsp;Pengunjung</p>
-            </div>
           </div>
           <div class="col-md-6">
             <img src="./assets/img/me.png" class="ban-img img-fluid animate__animated animate__fadeInRight animate__delay-1s">
@@ -651,19 +649,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      const countEl = document.getElementById('count');
 
-      updateVisitCount();
-
-      function updateVisitCount() {
-        fetch('https://api.countapi.xyz/update/yasikaekki.github.io/unlimited_code/?amount=1')
-        .then(res => res.json())
-        .then(res => {
-          countEl.innerHTML = res.value;
-        })
-      }
-    </script>
     <script>
       $(document).ready(function () {
         $(".wave").show();

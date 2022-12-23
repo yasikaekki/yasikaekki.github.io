@@ -54,7 +54,9 @@
                                     <a class="dropdown-item text-primary" href="f3.html">Konversi Panjang</a>
                                     <a class="dropdown-item text-primary" href="f4.html">Konversi Massa</a>
                                     <a class="dropdown-item text-primary" href="f5.html">Konversi Kecepatan</a>
-                                    <a class="dropdown-item text-primary" href="f6.html">Konversi Warna</a>
+                                    <a class="dropdown-item text-primary" href="f6.html">Konversi Decimal Binary</a>
+                                    <a class="dropdown-item text-primary" href="f7.html">Konversi Warna</a>
+                                    <a class="dropdown-item text-primary" href="f8.html">Gradient Generator</a>
                                 </div>
                             </li>
                             <li class="nav-item ms-2 radio-btn">
@@ -78,24 +80,19 @@
                 <div class="col-md-5">
                     <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <div class="card-body">
-                            <h3 class="text-center mb-4">Konversi Warna</h3>
-                            <div class="d-flex justify-content-center">
-                                <div class="card" style="width: 10rem; height: 10rem;" id="box-color"></div>
-                            </div>
+                            <h3 class="text-center mb-4">Konversi Decimal Binary</h3>
 
-                            <label>RGB</label>
-                            <div class="input-group mb-3" id="validation-1">
-                                <span class="input-group-text" id="basic-addon1">RGB</span>
-                                <input class="form-control" placeholder="rgb(255,255,255)" type="text" id="rgb" oninput="toHex()">
+                            <label>Decimal</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">DC</span>
+                                <input class="form-control" type="text" id="dec-inp">
                             </div>
-                            <p id="invalid-0" class="text-danger card-text"></p>
-                            
-                            <label>Hex</label>
-                            <div class="input-group mb-3" id="validation-2">
-                                <span class="input-group-text" id="basic-addon1">Hex</span>
-                                <input class="form-control" placeholder="#ffffff" type="text" id="hex" oninput="toRgb()">
+                            <label>Binary</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Biner</span>
+                                <input class="form-control" type="text" id="bin-inp">
                             </div>
-                            <p id="invalid-1" class="text-danger card-text"></p>
+                            <p class="text-danger" id="error-message"></p>
                         </div>
                     </div>
                 </div>

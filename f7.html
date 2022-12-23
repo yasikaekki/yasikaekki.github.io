@@ -80,27 +80,24 @@
                 <div class="col-md-5">
                     <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <div class="card-body">
-                            <h3 class="text-center mb-4">Konversi Kecepatan</h3>
-                            <label>MPH</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">MPH</span>
-                                <input class="form-control" type="number" id="mph">
+                            <h3 class="text-center mb-4">Konversi Warna</h3>
+                            <div class="d-flex justify-content-center">
+                                <div class="card" style="width: 10rem; height: 10rem;" id="box-color"></div>
                             </div>
-                            <label>Knots</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Knots</span>
-                                <input class="form-control" type="number" id="knots">
+
+                            <label>RGB</label>
+                            <div class="input-group mb-3" id="validation-1">
+                                <span class="input-group-text" id="basic-addon1">RGB</span>
+                                <input class="form-control" placeholder="rgb(255,255,255)" type="text" id="rgb" oninput="toHex()">
                             </div>
-                            <label>KPH</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">KPH</span>
-                                <input class="form-control" type="number" id="kph">
+                            <p id="invalid-0" class="text-danger card-text"></p>
+                            
+                            <label>Hex</label>
+                            <div class="input-group mb-3" id="validation-2">
+                                <span class="input-group-text" id="basic-addon1">Hex</span>
+                                <input class="form-control" placeholder="#ffffff" type="text" id="hex" oninput="toRgb()">
                             </div>
-                            <label>Mach</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Mach</span>
-                                <input class="form-control" type="number" id="mach">
-                            </div>
+                            <p id="invalid-1" class="text-danger card-text"></p>
                         </div>
                     </div>
                 </div>
@@ -182,7 +179,7 @@
         </div>
     </section>
     
-    <script src="./assets/js/f5.js"></script>
+    <script src="./assets/js/f7.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

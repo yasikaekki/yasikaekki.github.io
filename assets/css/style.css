@@ -1401,3 +1401,70 @@ h2.dark::before {
   color: #198754!important;
   border: 2px solid #198754!important;
 }
+
+#gradient-box {
+  background: linear-gradient(to top,#00BFFF,#0000FF);
+}
+
+#color1, #color2 {
+  width: 60px;
+  height: 30px;
+  float: right;
+  margin-top: 5px;
+}
+
+.copycode .text-area button {
+  background-color: #e9ecef;
+  width: 6vh;
+  height: 6vh;
+  opacity: 1;
+  border: 1px solid #ced4da;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+.copycode .text-area {
+  position: relative;
+  display: inline-block;
+}
+.copycode .text-area .tool-text {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.copycode .text-area .tool-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.copycode .text-area:hover .tool-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width:991px){
+  .inputcolor {
+    display: grid;
+  }
+}
+@media only screen and (min-width:992px){
+  .inputcolor {
+    display: flex;
+  }
+}
