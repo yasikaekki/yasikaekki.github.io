@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasika Ekki</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +20,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand animate__animated animate__fadeInDown" href="index.html"><span>Yasika Ekki</span></a>
+                    <a class="navbar-brand animate__animated animate__fadeInDown" href="../index.html"><span>Yasika Ekki</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         <span class="navbar-toggler-icon"></span>
@@ -29,19 +29,19 @@
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 animate__animated animate__fadeInDown">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html"><span data-hover="Beranda">Beranda</span></a>
+                                <a class="nav-link" href="../index.html"><span data-hover="Beranda">Beranda</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#about"><span data-hover="Tentang">Tentang</span></a>
+                                <a class="nav-link" href="../index.html#about"><span data-hover="Tentang">Tentang</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#skill"><span data-hover="Keahlian">Keahlian</span></a>
+                                <a class="nav-link" href="../index.html#skill"><span data-hover="Keahlian">Keahlian</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#certificate"><span data-hover="Pelatihan">Pelatihan</span></a>
+                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Pelatihan">Pelatihan</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#portfolio"><span data-hover="Portfolio">Portfolio</span></a>
+                                <a class="nav-link" href="../index.html#portfolio"><span data-hover="Portfolio">Portfolio</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#footer"><span data-hover="Kontak">Kontak</span></a>
@@ -57,6 +57,7 @@
                                     <a class="dropdown-item text-primary" href="f6.html">Konversi Decimal Binary</a>
                                     <a class="dropdown-item text-primary" href="f7.html">Konversi Warna</a>
                                     <a class="dropdown-item text-primary" href="f8.html">Gradient Generator</a>
+                                    <a class="dropdown-item text-primary" href="f9.html">Pixel Art Generator</a>
                                 </div>
                             </li>
                             <li class="nav-item ms-2 radio-btn">
@@ -80,43 +81,31 @@
                 <div class="col-md-5">
                     <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <div class="card-body">
-                            <h3 class="text-center mb-4">Gradient Generator</h3>
-                            <div class="d-flex justify-content-center">
-                                <div class="card" style="width: 10rem; height: 10rem;" id="gradient-box"></div>
-                            </div>
-
-                            <label>Linear Gradient</label>
-                            <div class="input-group mb-3 copycode">
-                                <span class="input-group-text" id="basic-addon1">LG</span>
-                                <input class="form-control" placeholder="linear-gradient(to top,deepskyblue,blue)" type="text" id="color-code" disabled>
-                                <div class="text-area">
-                                    <button onclick="copyFunc()" onmouseout="outFunc()">
-                                        <span class="tool-text" id="myTooltip">Copy to clipboard</span>
-                                        <i class="far fa-regular fa-copy"></i>
-                                    </button>
-                                </div>
-                            </div>
+                            <h3 class="text-center mb-4">Pixel Art Generator</h3>
                             <div class="row d-flex">
-                                <div class="form-group col-7">
+                                <div class="col-md-6">
+                                    <label>Lebar Grid</label>
                                     <div class="input-group mb-3">
-                                        <label class="input-group-text" for="inputcolor">Efek</label>
-                                        <select class="form-select" id="inputcolor">
-                                          <option value="to top">to top</option>
-                                          <option value="to bottom">to bottom</option>
-                                          <option value="to left">to left</option>
-                                          <option value="to right">to right</option>
-                                          <option value="to left top">to left top</option>
-                                          <option value="to left bottom">to left bottom</option>
-                                          <option value="to right top">to right top</option>
-                                          <option value="to right bottom">to right bottom</option>
-                                        </select>
+                                        <input class="form-range" type="range" min="1" max="25" id="width-range">
+                                        <span id="width-value">00</span>
                                     </div>
                                 </div>
-                                <div class="form-group inputcolor col-5">
-                                    <input class="col-3 me-2" type="color" name="color1" id="color1" value="#00BFFF">
-                                    <input class="col-3" type="color" name="color2" id="color2" value="#0000FF">
+                                <div class="col-md-6">
+                                    <label>Panjang Grid</label>
+                                    <div class="input-group mb-3">
+                                        <input class="form-range" type="range" min="1" max="25" id="height-range">
+                                        <span id="height-value">00</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary" id="submit-grid">Create Grid</button>
+                                    <button class="btn btn-warning" id="clear-grid">Clear Grid</button>
+                                    <input type="color" id="color-input"/>
+                                    <button class="btn btn-danger" id="erase-btn">Erase</button>
+                                    <button class="btn btn-success" id="paint-btn">Paint</button>         
                                 </div>
                             </div>
+                            <div class="container mt-3" id="pixel-container"></div>
                         </div>
                     </div>
                 </div>
@@ -128,7 +117,7 @@
         <h4 class="h3 text-center"><span class="quotes"></span></h4>
     </div>
     <canvas id="myCanvas"></canvas> 
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- Footer -->
     <section id="footer">
@@ -153,11 +142,11 @@
                 <div class="col-md-4 mt-3 info">
                     <h3>Tautan</h3>
                     <ul class="list-unlistyled list-inline">
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="#about">Tentang</a></li>
-                        <li><a href="#skill">Keahlian</a></li>
-                        <li><a href="#certificate">Pelatihan & Sertifikat</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="../index.html#about">Tentang</a></li>
+                        <li><a href="../index.html#skill">Keahlian</a></li>
+                        <li><a href="../index.html#certificate">Pelatihan & Sertifikat</a></li>
+                        <li><a href="../index.html#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mt-3">
@@ -198,7 +187,7 @@
         </div>
     </section>
     
-    <script src="./assets/js/f8.js"></script>
+    <script src="../assets/js/f9.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasika Ekki</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +20,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand animate__animated animate__fadeInDown" href="index.html"><span>Yasika Ekki</span></a>
+                    <a class="navbar-brand animate__animated animate__fadeInDown" href="../index.html"><span>Yasika Ekki</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         <span class="navbar-toggler-icon"></span>
@@ -29,19 +29,19 @@
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 animate__animated animate__fadeInDown">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html"><span data-hover="Beranda">Beranda</span></a>
+                                <a class="nav-link" href="../index.html"><span data-hover="Beranda">Beranda</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#about"><span data-hover="Tentang">Tentang</span></a>
+                                <a class="nav-link" href="../index.html#about"><span data-hover="Tentang">Tentang</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#skill"><span data-hover="Keahlian">Keahlian</span></a>
+                                <a class="nav-link" href="../index.html#skill"><span data-hover="Keahlian">Keahlian</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#certificate"><span data-hover="Pelatihan">Pelatihan</span></a>
+                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Pelatihan">Pelatihan</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#portfolio"><span data-hover="Portfolio">Portfolio</span></a>
+                                <a class="nav-link" href="../index.html#portfolio"><span data-hover="Portfolio">Portfolio</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#footer"><span data-hover="Kontak">Kontak</span></a>
@@ -57,6 +57,7 @@
                                     <a class="dropdown-item text-primary" href="f6.html">Konversi Decimal Binary</a>
                                     <a class="dropdown-item text-primary" href="f7.html">Konversi Warna</a>
                                     <a class="dropdown-item text-primary" href="f8.html">Gradient Generator</a>
+                                    <a class="dropdown-item text-primary" href="f9.html">Pixel Art Generator</a>
                                 </div>
                             </li>
                             <li class="nav-item ms-2 radio-btn">
@@ -77,44 +78,38 @@
     <section id="feature">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-5">
+                <div class="col-lg-5">
                     <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <div class="card-body">
-                            <h3 class="text-center mb-4">Konversi Panjang</h3>
-                            <label>Feet</label>
+                            <h3 class="text-center mb-4">Kalkulator Sederhana</h3>
+                            <label>Input 1</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Ft</span>
-                                <input type="number" class="form-control" id="ft">
+                                <span class="input-group-text" id="basic-addon1">Num</span>
+                                <input class="form-control" type="number" id="num1">
                             </div>
-                            <label>Inces</label>
+                            <label>Input 2</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">In</span>
-                                <input type="number" class="form-control" id="inc">
+                                <span class="input-group-text" id="basic-addon1">Num</span>
+                                <input class="form-control" type="number" id="num2">
                             </div>
-                            <label>Yeards</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Yd</span>
-                                <input type="number" class="form-control" id="yd">
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <button class="btn btn-light col-12" id="add">+</button>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <button class="btn btn-light col-12" id="sub">-</button>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <button class="btn btn-light col-12" id="mul">x</button>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <button class="btn btn-light col-12" id="div">/</button>
+                                </div>
                             </div>
-                            <label>Miles</label>
+                            <label>Hasil</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Mi</span>
-                                <input type="number" class="form-control" id="mi">
-                            </div>
-                            <label>Meter</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">M</span>
-                                <input type="number" class="form-control" id="m">
-                            </div>
-                            <label>Centimeter</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Cm</span>
-                                <input type="number" class="form-control" id="cm">
-                            </div>
-                            <label>Kilometer</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Km</span>
-                                <input type="number" class="form-control" id="km">
+                                <span class="input-group-text" id="basic-addon1">=</span>
+                                <input class="form-control" type="number" disabled id="result">
                             </div>
                         </div>
                     </div>
@@ -127,7 +122,7 @@
         <h4 class="h3 text-center"><span class="quotes"></span></h4>
     </div>
     <canvas id="myCanvas"></canvas> 
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- Footer -->
     <section id="footer">
@@ -148,41 +143,41 @@
                     <a href="https://github.com/yasikaekki" class="btn btn-outline-primary">
                         <i class="fab fa-github"></i>
                     </a>
-                </div>
-                <div class="col-md-4 mt-3 info">
+                    </div>
+                    <div class="col-md-4 mt-3 info">
                     <h3>Tautan</h3>
                     <ul class="list-unlistyled list-inline">
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="#about">Tentang</a></li>
-                        <li><a href="#skill">Keahlian</a></li>
-                        <li><a href="#certificate">Pelatihan & Sertifikat</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="../index.html#about">Tentang</a></li>
+                        <li><a href="../index.html#skill">Keahlian</a></li>
+                        <li><a href="../index.html#certificate">Pelatihan & Sertifikat</a></li>
+                        <li><a href="../index.html#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mt-3">
                     <h4>Kontak Saya</h4>
                     <ul class="list-unlistyled list-inline">
                         <li>
-                            <div class="row address">
-                                <div class="col-md-1">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="col-md-11">
-                                    <p>
-                                        Dusun Curah Ketangi Rt 07 Rw 01, Desa Setail, Kec. Genteng, Kab. Banyuwangi, Jawa Timur, Indonesia
-                                    </p>
-                                </div>
+                        <div class="row address">
+                            <div class="col-md-1">
+                            <i class="fas fa-map-marker-alt"></i>
                             </div>
+                            <div class="col-md-11">
+                            <p>
+                                Dusun Curah Ketangi Rt 07 Rw 01, Desa Setail, Kec. Genteng, Kab. Banyuwangi, Jawa Timur, Indonesia
+                            </p>
+                            </div>
+                        </div>
                         </li>
                         <li>
-                            <p>
-                                <i class="fas fa-phone me-3"></i>+6281238398906
-                            </p>
+                        <p>
+                            <i class="fas fa-phone me-3"></i>+6281238398906
+                        </p>
                         </li>
                         <li>
-                            <p>
-                                <i class="fas fa-envelope me-3"></i> yasikaekki07@gmail.com
-                            </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i> yasikaekki07@gmail.com
+                        </p>
                         </li>
                     </ul>
                     <a href="https://t.me/iyawizlah" class="btn btn-outline-primary"><i class="fab fa-telegram"></i></a>
@@ -197,7 +192,7 @@
         </div>
     </section>
     
-    <script src="./assets/js/f3.js"></script>
+    <script src="../assets/js/f1.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -263,7 +258,6 @@
         // Get the button
         var mybutton = document.getElementById("up");
         var style = document.createElement('style');
-
         mybutton.style.display = "none";
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};

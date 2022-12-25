@@ -6,7 +6,6 @@ let inputColor = document.getElementById("inputcolor");
 
 function changeGradient() {
     gradient.style.background="linear-gradient("+inputColor.value+","+color1.value+","+color2.value+")";
-    console.log(gradient.style.background);
     colorCode.value = gradient.style.background;
 }
 

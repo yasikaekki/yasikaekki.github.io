@@ -1468,3 +1468,19 @@ h2.dark::before {
     display: flex;
   }
 }
+
+.gridCol {
+  height: 1em;
+  width: 1em;
+  border: 1px solid #ddd;
+}
+.gridRow {
+  display: flex;
+}
+
+#color-input {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+}

@@ -3,12 +3,16 @@ let valid_2 = document.getElementById("validation-2");
 let result = document.getElementById("box-color");
 let hexInput = document.getElementById("hex");
 let rgbInput = document.getElementById("rgb");
+let rgbaInput = document.getElementById("rgba");
+let alfaInput = document.getElementById("alfa");
+let alfaValue = document.getElementById("alfa-value");
 
 // result.style.display = "none";
-
 window.onload=()=>{
     hexInput.value = "";
     rgbInput.value = "";
+    rgbaInput.value = "";
+    alfaInput.value = 1;
 }
 
 // function valid(element){
@@ -39,6 +43,17 @@ function toRgb(){
             console.log(rgbArr);
         }
         rgbInput.value = "rgb(" + rgbArr + ")";
+
+        alfaInput.addEventListener("input", () => {
+            alfaValue.innerHTML = alfaInput.value;
+        
+            let alfaCode = alfaInput.value;
+            // let hexCode = hexInput.value;
+            result.style.backgroundColor = "rgba("+rgbArr+","+alfaCode+")";
+            rgbaInput.value = "rgba("+rgbArr+","+alfaCode+")";
+            console.log(rgbaInput.value)
+        });
+        
         result.style.backgroundColor = "rgb(" + rgbArr + ")";
     }
     else{
@@ -83,6 +98,22 @@ function toHex(){
                 hex += value.length == 1? "0"+value : value;
             });
             hexInput.value = hex;
+            let hexCode = hexInput.value;
+            alfaInput.addEventListener("input", () => {
+                alfaValue.innerHTML = alfaInput.value;
+                let rgbArr = [];
+                hexCode = hexCode.split("#")[1] || hexCode;
+                for(let i=0; i<hexCode.length;i+=2){
+                    rgbArr.push(parseInt(hexCode[i] + hexCode[i+1], 16));
+                    console.log(rgbArr);
+                }
+                
+                let alfaCode = alfaInput.value;
+                // let hexCode = hexInput.value;
+                result.style.backgroundColor = "rgba("+rgbArr+","+alfaCode+")";
+                rgbaInput.value = "rgba("+rgbArr+","+alfaCode+")";
+            });
+
             result.style.backgroundColor = hex;
         }
         else{
