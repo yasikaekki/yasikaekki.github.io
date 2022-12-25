@@ -7,6 +7,8 @@
     <title>Yasika Ekki</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/darkmode.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -89,25 +91,43 @@
                             <label>Alfa</label>
                             <div class="input-group mb-3">
                                 <input class="form-range" min="0" max="1" step=".1" type="range" id="alfa">
-                                <span id="alfa-value">0.0</span>
+                                <span id="alfa-value">0</span>
                             </div>
                             <label>RGB</label>
-                            <div class="input-group mb-3" id="validation-1">
+                            <div class="input-group mb-3 copycode" id="validation-1">
                                 <span class="input-group-text" id="basic-addon1">RGB</span>
                                 <input class="form-control" placeholder="rgb(255,255,255)" type="text" id="rgb" oninput="toHex()">
+                                <div class="text-area">
+                                    <button onclick="copyrgbFunc()" onmouseout="outrgbFunc()">
+                                        <span class="tool-text" id="Toolrgb">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <p id="invalid-0" class="text-danger card-text"></p>
                             
                             <label>Hex</label>
-                            <div class="input-group mb-3" id="validation-2">
+                            <div class="input-group mb-3 copycode" id="validation-2">
                                 <span class="input-group-text" id="basic-addon1">Hex</span>
                                 <input class="form-control" placeholder="#ffffff" type="text" id="hex" oninput="toRgb()">
+                                <div class="text-area">
+                                    <button onclick="copyhexFunc()" onmouseout="outhexFunc()">
+                                        <span class="tool-text" id="Toolhex">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <p id="invalid-1" class="text-danger card-text"></p>
                             <label>RGBA</label>
-                            <div class="input-group mb-3" id="validation-2">
+                            <div class="input-group mb-3 copycode" id="validation-2">
                                 <span class="input-group-text" id="basic-addon1">RGBA</span>
                                 <input class="form-control" placeholder="rgba(255,255,255,1)" type="text" id="rgba" readonly>
+                                <div class="text-area">
+                                    <button onclick="copyrgbaFunc()" onmouseout="outrgbaFunc()">
+                                        <span class="tool-text" id="Toolrgba">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

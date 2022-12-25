@@ -7,6 +7,8 @@
     <title>Yasika Ekki</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/darkmode.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -89,9 +91,15 @@
                                 <input class="form-control" type="text" id="dec-inp">
                             </div>
                             <label>Binary</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group copycode mb-3" id="validation-1">
                                 <span class="input-group-text" id="basic-addon1">Biner</span>
                                 <input class="form-control" type="text" id="bin-inp">
+                                <div class="text-area">
+                                    <button onclick="copyFunc()" onmouseout="outFunc()">
+                                        <span class="tool-text" id="myTooltip">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <p class="text-danger" id="error-message"></p>
                         </div>

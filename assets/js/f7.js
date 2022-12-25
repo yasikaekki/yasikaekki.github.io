@@ -28,7 +28,6 @@ function toRgb(){
     let hexCode = hexInput.value;
     let rgbArr = [];
     let text = document.getElementById("invalid-1");
-    let newHtml = '';
     if(/^#?[A-Fa-f0-9]{6}$/.test(hexCode)){
 
         hexInput.classList.add("valid");
@@ -36,7 +35,7 @@ function toRgb(){
         valid_2.classList.add("valid-success");
         valid_2.classList.remove("valid-failed");
         // result.style.display = "block";
-        text.style.display = "none";
+        text.textContent = "";
         hexCode = hexCode.split("#")[1] || hexCode;
         for(let i=0; i<hexCode.length;i+=2){
             rgbArr.push(parseInt(hexCode[i] + hexCode[i+1], 16));
@@ -63,12 +62,7 @@ function toRgb(){
         valid_2.classList.remove("valid-success");
         valid_2.classList.add("valid-failed");
         
-        newHtml += "Format anda salah!<br> ";
-        newHtml += "Note: gunakan format ";
-        newHtml += "<b>";
-        newHtml += "#";
-        newHtml += "</b> ";
-        newHtml += "atau range huruf 1-6";
+        newHtml = "Format anda salah!<br> "+"Note: gunakan format "+"<b>"+"#"+"</b> "+"atau range huruf 1-6";
         text.innerHTML = newHtml;
     }
 }
@@ -79,7 +73,6 @@ function toHex(){
     let rgbRegex2 = /^[0-9]{1,3},[0-9]{1,3},[0-9]{1,3}$/
     let hex = "#";
     let text = document.getElementById("invalid-0");
-    let newHtml = '';
     if(rgbRegex1.test(rgbCode) || rgbRegex2.test(rgbCode)){
         rgbCode = rgbCode.replace(/[rgb()]+/g,"") || rgbCode;
         rgbCode = rgbCode.split(",");
@@ -92,7 +85,7 @@ function toHex(){
             valid_1.classList.add("valid-success");
             valid_1.classList.remove("valid-failed");
             // style.display.display = "block";
-            text.style.display = "none";
+            text.textContent = "";
             rgbCode.forEach(value => {
                 value = parseInt(value).toString(16);
                 hex += value.length == 1? "0"+value : value;
@@ -123,12 +116,7 @@ function toHex(){
             valid_1.classList.remove("valid-success");
             valid_1.classList.add("valid-failed");
 
-            newHtml += "Format anda salah!<br> ";
-            newHtml += "Note: gunakan format ";
-            newHtml += "<b>";
-            newHtml += "rgb()";
-            newHtml += "</b> ";
-            newHtml += "atau range huruf 0-255";
+            newHtml = "Format anda salah!<br> "+"Note: gunakan format "+"<b>"+"rgb()"+"</b> "+"atau range huruf 0-255";
             text.innerHTML = newHtml;
         }
     }else{
@@ -138,13 +126,50 @@ function toHex(){
         valid_1.classList.remove("valid-success");
         valid_1.classList.add("valid-failed");
 
-        newHtml += "Format anda salah!<br> ";
-        newHtml += "Note: gunakan format ";
-        newHtml += "<b>";
-        newHtml += "rgb()";
-        newHtml += "</b> ";
-        newHtml += "atau range huruf 0-255";
+        newHtml = "Format anda salah!<br> "+"Note: gunakan format "+"<b>"+"rgb()"+"</b> "+"atau range huruf 0-255";
         text.innerHTML = newHtml;
     }
 
+}
+
+function copyrgbFunc() {
+    rgbInput.select();
+    rgbInput.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(rgbInput.value);
+    
+    var tooltip = document.getElementById("Toolrgb");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outrgbFunc() {
+    var tooltip = document.getElementById("Toolrgb");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copyhexFunc() {
+    hexInput.select();
+    hexInput.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(hexInput.value);
+    
+    var tooltip = document.getElementById("Toolhex");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outhexFunc() {
+    var tooltip = document.getElementById("Toolhex");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copyrgbaFunc() {
+    rgbaInput.select();
+    rgbaInput.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(rgbaInput.value);
+    
+    var tooltip = document.getElementById("Toolrgba");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outrgbaFunc() {
+    var tooltip = document.getElementById("Toolrgba");
+    tooltip.innerHTML = "Copy to clipboard";
 }

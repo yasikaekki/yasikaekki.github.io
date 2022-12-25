@@ -1,0 +1,79 @@
+body.dark {
+    background-color: #191d21;
+    color: white;
+}
+
+.text-shadow-blue.dark {
+    color: white;
+    background-image: linear-gradient(to top, #334b94 40%, transparent 0px);
+}
+
+h2.dark::after {
+    background-color: #ffffff;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
+    left: 0.7em;
+}
+
+h2.dark::before {
+    background-color: #ffffff;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
+    right: 0.7em;
+}
+
+.wave.dark {
+    visibility: hidden;
+}
+
+#wave.dark {
+    visibility: visible;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#about .resume-item.dark {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+
+#about .resume-item.dark span {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card.dark {
+    display: grid;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #191d21;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.26);
+}
+
+#feature.dark h3,
+#feature.dark label {
+    color: #fff;
+}
+
+
+
+#skill.dark {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white !important;
+}
