@@ -14,3 +14,17 @@ document.getElementById("mul").addEventListener("click", function() {
 document.getElementById("div").addEventListener("click", function() {
     res.value = parseInt(n1.value)/parseInt(n2.value);
 });
+
+function copyFunc() {
+    res.select();
+    res.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(res.value);
+    
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+}

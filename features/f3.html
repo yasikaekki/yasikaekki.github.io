@@ -40,7 +40,7 @@
                                 <a class="nav-link" href="../index.html#skill"><span data-hover="Keahlian">Keahlian</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Pelatihan">Pelatihan</span></a>
+                                <a class="nav-link" href="../index.html#certificate"><span data-hover="PSertifikasi">PSertifikasi</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../index.html#portfolio"><span data-hover="Portfolio">Portfolio</span></a>
@@ -84,39 +84,81 @@
                         <div class="card-body">
                             <h3 class="text-center mb-4">Konversi Panjang</h3>
                             <label>Feet</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Ft</span>
                                 <input type="number" class="form-control" id="ft">
+                                <div class="text-area">
+                                    <button onclick="copyftFunc()" onmouseout="outftFunc()">
+                                        <span class="tool-text" id="Toolft">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Inces</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">In</span>
                                 <input type="number" class="form-control" id="inc">
+                                <div class="text-area">
+                                    <button onclick="copyincFunc()" onmouseout="outincFunc()">
+                                        <span class="tool-text" id="Toolinc">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Yeards</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Yd</span>
                                 <input type="number" class="form-control" id="yd">
+                                <div class="text-area">
+                                    <button onclick="copyydFunc()" onmouseout="outydFunc()">
+                                        <span class="tool-text" id="Toolyd">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Miles</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Mi</span>
                                 <input type="number" class="form-control" id="mi">
+                                <div class="text-area">
+                                    <button onclick="copymiFunc()" onmouseout="outmiFunc()">
+                                        <span class="tool-text" id="Toolmi">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Meter</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">M</span>
                                 <input type="number" class="form-control" id="m">
+                                <div class="text-area">
+                                    <button onclick="copymtFunc()" onmouseout="outmtFunc()">
+                                        <span class="tool-text" id="Toolmt">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Centimeter</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Cm</span>
                                 <input type="number" class="form-control" id="cm">
+                                <div class="text-area">
+                                    <button onclick="copycmFunc()" onmouseout="outcmFunc()">
+                                        <span class="tool-text" id="Toolcm">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Kilometer</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Km</span>
                                 <input type="number" class="form-control" id="km">
+                                <div class="text-area">
+                                    <button onclick="copykmFunc()" onmouseout="outkmFunc()">
+                                        <span class="tool-text" id="Toolkm">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,7 +199,7 @@
                         <li><a href="../index.html">Beranda</a></li>
                         <li><a href="../index.html#about">Tentang</a></li>
                         <li><a href="../index.html#skill">Keahlian</a></li>
-                        <li><a href="../index.html#certificate">Pelatihan & Sertifikat</a></li>
+                        <li><a href="../index.html#certificate">PSertifikasi</a></li>
                         <li><a href="../index.html#portfolio">Portfolio</a></li>
                     </ul>
                 </div>

@@ -68,3 +68,73 @@ gram.addEventListener("input", function() {
     stons.value = st;
     kilo.value = kg;
 })
+
+function copylbFunc() {
+    ponds.select();
+    ponds.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(ponds.value);
+    
+    var tooltip = document.getElementById("Toollb");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outlbFunc() {
+    var tooltip = document.getElementById("Toollb");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copyozFunc() {
+    oncs.select();
+    oncs.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(oncs.value);
+    
+    var tooltip = document.getElementById("Tooloz");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outozFunc() {
+    var tooltip = document.getElementById("Tooloz");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copystFunc() {
+    stons.select();
+    stons.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(stons.value);
+    
+    var tooltip = document.getElementById("Toolst");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outstFunc() {
+    var tooltip = document.getElementById("Toolst");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copykgFunc() {
+    kilo.select();
+    kilo.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(kilo.value);
+    
+    var tooltip = document.getElementById("Toolkg");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outkgFunc() {
+    var tooltip = document.getElementById("Toolkg");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copymtFunc() {
+    gram.select();
+    gram.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(gram.value);
+    
+    var tooltip = document.getElementById("Toolmt");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outmtFunc() {
+    var tooltip = document.getElementById("Toolmt");
+    tooltip.innerHTML = "Copy to clipboard";
+}

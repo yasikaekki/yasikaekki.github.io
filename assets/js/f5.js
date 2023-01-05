@@ -46,3 +46,59 @@ match.addEventListener("input", function() {
     knots.value = x;
     kph.value = y;
 });
+
+function copymphFunc() {
+    mph.select();
+    mph.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(mph.value);
+    
+    var tooltip = document.getElementById("Toolmph");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outmphFunc() {
+    var tooltip = document.getElementById("Toolmph");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copyknoFunc() {
+    knots.select();
+    knots.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(knots.value);
+    
+    var tooltip = document.getElementById("Toolkno");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outknoFunc() {
+    var tooltip = document.getElementById("Toolkno");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copykphFunc() {
+    kph.select();
+    kph.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(kph.value);
+    
+    var tooltip = document.getElementById("Toolkph");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outkphFunc() {
+    var tooltip = document.getElementById("Toolkph");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copymacFunc() {
+    match.select();
+    match.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(match.value);
+    
+    var tooltip = document.getElementById("Toolmac");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outmacFunc() {
+    var tooltip = document.getElementById("Toolmac");
+    tooltip.innerHTML = "Copy to clipboard";
+}

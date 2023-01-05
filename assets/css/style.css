@@ -727,27 +727,33 @@ h2::before {
   }
 }
 
+.back-to-up.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .back-to-up {
   box-shadow: 0 2px 6px #acb5f6;
   position: fixed;
-  display: inline;
-  background-color: #0a72f9;
+  visibility: hidden;
+  opacity: 0;
+  background: #0a72f9;
   width: 44px;
   height: 44px;
   text-align: center;
-  line-height: 30px;
   font-size: 22px;
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
+  transition: all 0.4s;
   color: #fff;
 }
 
-.btn-floating i {
+.back-to-up i {
   margin-top: 10px;
 }
 
-.btn-floating a:hover {
+.back-to-up:hover {
   background-color: #4254f4;
   color: #fff;
 }

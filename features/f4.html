@@ -40,7 +40,7 @@
                                 <a class="nav-link" href="../index.html#skill"><span data-hover="Keahlian">Keahlian</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Pelatihan">Pelatihan</span></a>
+                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Sertifikasi">Sertifikasi</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../index.html#portfolio"><span data-hover="Portfolio">Portfolio</span></a>
@@ -84,29 +84,59 @@
                         <div class="card-body">
                             <h3 class="text-center mb-4">Konversi Massa</h3>
                             <label>Pounds</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Lb</span>
                                 <input class="form-control" type="number" id="lb">
+                                <div class="text-area">
+                                    <button onclick="copylbFunc()" onmouseout="outlbFunc()">
+                                        <span class="tool-text" id="Toollb">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Ounces</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Oz</span>
                                 <input class="form-control" type="number" id="oz">
+                                <div class="text-area">
+                                    <button onclick="copyozFunc()" onmouseout="outozFunc()">
+                                        <span class="tool-text" id="Tooloz">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Stones</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">St</span>
                                 <input class="form-control" type="number" id="st">
+                                <div class="text-area">
+                                    <button onclick="copystFunc()" onmouseout="outstFunc()">
+                                        <span class="tool-text" id="Toolst">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Kilogram</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Kg</span>
                                 <input class="form-control" type="number" id="kg">
+                                <div class="text-area">
+                                    <button onclick="copykgFunc()" onmouseout="outkgFunc()">
+                                        <span class="tool-text" id="Toolkg">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Gram</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">G</span>
                                 <input class="form-control" type="number" id="g">
+                                <div class="text-area">
+                                    <button onclick="copygrFunc()" onmouseout="outgrFunc()">
+                                        <span class="tool-text" id="Toolgr">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -147,7 +177,7 @@
                         <li><a href="../index.html">Beranda</a></li>
                         <li><a href="../index.html#about">Tentang</a></li>
                         <li><a href="../index.html#skill">Keahlian</a></li>
-                        <li><a href="../index.html#certificate">Pelatihan & Sertifikat</a></li>
+                        <li><a href="../index.html#certificate">Sertifikasi</a></li>
                         <li><a href="../index.html#portfolio">Portfolio</a></li>
                     </ul>
                 </div>

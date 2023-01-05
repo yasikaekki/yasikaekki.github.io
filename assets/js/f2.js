@@ -53,3 +53,59 @@ kelvinInput.addEventListener('input', function(){
     reamurInput.value = rTemp;
     fahrenheitInput.value = fTemp;
 })
+
+function copycelFunc() {
+    celciusInput.select();
+    celciusInput.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(celciusInput.value);
+    
+    var tooltip = document.getElementById("Toolcel");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outcelFunc() {
+    var tooltip = document.getElementById("Toolcel");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copyreFunc() {
+    reamurInput.select();
+    reamurInput.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(reamurInput.value);
+    
+    var tooltip = document.getElementById("Toolre");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outreFunc() {
+    var tooltip = document.getElementById("Toolre");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copyfahFunc() {
+    fahrenheitInput.select();
+    fahrenheitInput.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(fahrenheitInput.value);
+    
+    var tooltip = document.getElementById("Toolfah");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outfahFunc() {
+    var tooltip = document.getElementById("Toolfah");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copykelFunc() {
+    kelvinInput.select();
+    kelvinInput.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(kelvinInput.value);
+    
+    var tooltip = document.getElementById("Toolkel");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outkelFunc() {
+    var tooltip = document.getElementById("Toolkel");
+    tooltip.innerHTML = "Copy to clipboard";
+}

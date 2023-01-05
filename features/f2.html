@@ -40,7 +40,7 @@
                                 <a class="nav-link" href="../index.html#skill"><span data-hover="Keahlian">Keahlian</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Pelatihan">Pelatihan</span></a>
+                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Sertifikasi">Sertifikasi</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../index.html#portfolio"><span data-hover="Portfolio">Portfolio</span></a>
@@ -84,24 +84,48 @@
                         <div class="card-body">
                             <h3 class="text-center mb-4">Konversi Suhu</h3>
                             <label>Celcius</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">&#8451</span>
                                 <input type="number" class="form-control" id="celcius">
+                                <div class="text-area">
+                                    <button onclick="copycelFunc()" onmouseout="outcelFunc()">
+                                        <span class="tool-text" id="Toolcel">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Reamur</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">°R</span>
                                 <input type="number" class="form-control" id="reamur">
+                                <div class="text-area">
+                                    <button onclick="copyreFunc()" onmouseout="outreFunc()">
+                                        <span class="tool-text" id="Toolre">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Fahrenheit</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">&#8457</span>
                                 <input type="number" class="form-control" id="fahrenheit">
+                                <div class="text-area">
+                                    <button onclick="copyfahFunc()" onmouseout="outfahFunc()">
+                                        <span class="tool-text" id="Toolfah">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Kelvin</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">&#8490</span>
                                 <input type="number" class="form-control" id="kelvin">
+                                <div class="text-area">
+                                    <button onclick="copykelFunc()" onmouseout="outkelFunc()">
+                                        <span class="tool-text" id="Toolkel">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,7 +166,7 @@
                         <li><a href="../index.html">Beranda</a></li>
                         <li><a href="../index.html#about">Tentang</a></li>
                         <li><a href="../index.html#skill">Keahlian</a></li>
-                        <li><a href="../index.html#certificate">Pelatihan & Sertifikat</a></li>
+                        <li><a href="../index.html#certificate">Sertifikasi</a></li>
                         <li><a href="../index.html#portfolio">Portfolio</a></li>
                     </ul>
                 </div>

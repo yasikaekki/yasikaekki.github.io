@@ -110,8 +110,8 @@
         display: block;
         width: 25px;
         height: 25px;
-        border-bottom: 3px solid #0a72f9;
-        border-right: 3px solid #0a72f9;
+        border-bottom: 5px solid #0a72f9;
+        border-right: 5px solid #0a72f9;
         transform: rotate(45deg);
         margin: -10px;
         animation: scroll-down 2s ease infinite;

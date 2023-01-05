@@ -124,3 +124,101 @@ kilo.addEventListener("input", function() {
     meter.value = m;
     centi.value = cm;
 })
+
+function copyftFunc() {
+    feet.select();
+    feet.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(feet.value);
+    
+    var tooltip = document.getElementById("Toolft");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outftFunc() {
+    var tooltip = document.getElementById("Toolft");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copyincFunc() {
+    incs.select();
+    incs.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(incs.value);
+    
+    var tooltip = document.getElementById("Toolinc");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outincFunc() {
+    var tooltip = document.getElementById("Toolinc");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copyydFunc() {
+    yards.select();
+    yards.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(yards.value);
+    
+    var tooltip = document.getElementById("Toolyd");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outydFunc() {
+    var tooltip = document.getElementById("Toolyd");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copymiFunc() {
+    miles.select();
+    miles.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(miles.value);
+    
+    var tooltip = document.getElementById("Toolmi");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outmiFunc() {
+    var tooltip = document.getElementById("Toolmi");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copymtFunc() {
+    meter.select();
+    meter.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(meter.value);
+    
+    var tooltip = document.getElementById("Toolmt");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outmtFunc() {
+    var tooltip = document.getElementById("Toolmt");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copycmFunc() {
+    centi.select();
+    centi.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(centi.value);
+    
+    var tooltip = document.getElementById("Toolcm");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outcmFunc() {
+    var tooltip = document.getElementById("Toolcm");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function copykmFunc() {
+    kilo.select();
+    kilo.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(kilo.value);
+    
+    var tooltip = document.getElementById("Toolkm");
+    tooltip.innerHTML = "Copied!";
+}
+
+function outkmFunc() {
+    var tooltip = document.getElementById("Toolkm");
+    tooltip.innerHTML = "Copy to clipboard";
+}

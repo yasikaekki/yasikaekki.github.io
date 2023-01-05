@@ -40,7 +40,7 @@
                                 <a class="nav-link" href="../index.html#skill"><span data-hover="Keahlian">Keahlian</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Pelatihan">Pelatihan</span></a>
+                                <a class="nav-link" href="../index.html#certificate"><span data-hover="Sertifikasi">Sertifikasi</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../index.html#portfolio"><span data-hover="Portfolio">Portfolio</span></a>
@@ -84,24 +84,48 @@
                         <div class="card-body">
                             <h3 class="text-center mb-4">Konversi Kecepatan</h3>
                             <label>MPH</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">MPH</span>
                                 <input class="form-control" type="number" id="mph">
+                                <div class="text-area">
+                                    <button onclick="copymphFunc()" onmouseout="outmphFunc()">
+                                        <span class="tool-text" id="Toolmph">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Knots</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Knots</span>
                                 <input class="form-control" type="number" id="knots">
+                                <div class="text-area">
+                                    <button onclick="copyknoFunc()" onmouseout="outknoFunc()">
+                                        <span class="tool-text" id="Toolkno">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>KPH</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">KPH</span>
                                 <input class="form-control" type="number" id="kph">
+                                <div class="text-area">
+                                    <button onclick="copykphFunc()" onmouseout="outkphFunc()">
+                                        <span class="tool-text" id="Toolkph">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <label>Mach</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 copycode">
                                 <span class="input-group-text" id="basic-addon1">Mach</span>
                                 <input class="form-control" type="number" id="mach">
+                                <div class="text-area">
+                                    <button onclick="copymacFunc()" onmouseout="outmacFunc()">
+                                        <span class="tool-text" id="Toolmac">Copy to clipboard</span>
+                                        <i class="far fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,7 +166,7 @@
                         <li><a href="../index.html">Beranda</a></li>
                         <li><a href="../index.html#about">Tentang</a></li>
                         <li><a href="../index.html#skill">Keahlian</a></li>
-                        <li><a href="../index.html#certificate">Pelatihan & Sertifikat</a></li>
+                        <li><a href="../index.html#certificate">Sertifikasi</a></li>
                         <li><a href="../index.html#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
